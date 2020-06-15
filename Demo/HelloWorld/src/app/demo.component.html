@@ -1,1 +1,25 @@
 <h3>Hello</h3>
+Age: {{age}} <br>
+Name: {{username}}<br>
+price : {{price}}<br>
+quantity : {{quantity}}<br>
+status : {{status}}<br>
+phone : {{phone}}<br>
+<img src="assets/img/{{photo}}" width="120" height="100"><br>
+<ul>
+    Chi lap dc 1 cai tag html
+    <li *ngFor="let photo of photos">
+        {{photo}}
+    </li>
+</ul>
+
+<ol>    
+    Cho phep lap nhieu cai html
+    <ng-container *ngFor="let photo of photos">
+        <li>
+            {{photo}}
+        </li>
+    </ng-container>
+</ol>
+
+<span *ngIf="quantity != 0">Sale {{quantity}}</span>
