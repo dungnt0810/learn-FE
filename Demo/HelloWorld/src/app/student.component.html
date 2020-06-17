@@ -1,0 +1,27 @@
+<h3>Student info</h3>
+<table>
+    <tr>
+        <td>id</td>
+        <td>name</td>
+      <!--  <td>Faculty</td>
+        <td>Courses</td>-->
+    </tr>
+    <tr >
+        <td>{{student.id}}</td>
+        <td>{{student.name}}</td>
+      <!--  <td>{{student.faculty}}</td>
+        <td>{{student.courses}}</td> -->
+    </tr>
+</table>
+
+<h3>Faculty info</h3>
+    id: {{student.faculty.id}}
+    name: {{student.faculty.name}}
+<h3>Courses </h3>
+<ng-container *ngFor="let c of student.courses">
+    <tr>
+        <td>{{c.id}}</td>
+        <td>{{c.name}}</td>
+        <td>{{c.score}}</td>
+    </tr>
+</ng-container>
