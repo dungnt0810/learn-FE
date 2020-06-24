@@ -1,0 +1,33 @@
+<h3>Click event</h3>
+
+<form >
+    <input type="button" value="Click me" (click)="hello()" ><br>
+    <input type="button" value="white" (click)="changebg($event)">
+    <input type="button" value="red" (click)="changebg($event)">
+    <input type="button" value="blue" (click)="changebg($event)">
+    <input type="button" value="black" (click)="changebg($event)">
+
+</form>
+
+<h3>key up event</h3>
+
+<form>
+    <input type="text" (keyup)="display($event)" ><br>
+    <input type="text" (keyup.enter)="display2($event)" >
+</form>
+
+<h3>Change size photo (keyup)</h3>
+<img src="./assets/img/FB_IMG_1529509183911.jpg" alt="Lisa" width="{{photoWidth}}" height="{{photoHeight}}">
+<form>
+    Width: <input type="text" value="{{photoWidth}}" (keyup.enter)="changeWidth($event)" ><br>
+    Height: <input type="text" value="{{photoHeight}}" (keyup.enter)="changeHeight($event)" >
+</form>
+
+<h3>Chage event</h3>
+
+<select (change)="selectCategory($event)">
+    <option value="c1">category 1</option> 
+    <option value="c2">category 2</option>  
+    <option value="c3">category 3</option>   
+</select>
+

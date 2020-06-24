@@ -1,0 +1,7 @@
+<h3>Register</h3>
+
+<form [formGroup]="registerForm" (ngSubmit)="Save()">
+    username: <input type="text" formControlName="username"><br>
+    password: <input type="password" formControlName="password"><br>
+    <input type="submit" value="save">
+</form>

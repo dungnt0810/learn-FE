@@ -1,0 +1,20 @@
+<h3>One way</h3>
+
+<form >
+    nameA: <input type="text" [ngModel]="nameA" [ngModelOptions]="{standalone: true}"><br>
+    {{nameA}}
+</form>
+
+<h3>Two way</h3>
+<form >
+    nameB : <input type="text" [(ngModel)]="nameB" [ngModelOptions]="{standalone: true}"><br>
+    {{nameB}}
+</form>
+
+<h3>Change size Image</h3>
+<form >
+    <img src="./assets/img/FB_IMG_1529509183911.jpg" alt="Lisa" width="{{photoWidth}}" height="{{photoHeight}}"><br>
+    Width: <input type="number" [(ngModel)]="photoWidth" [ngModelOptions]="{standalone: true}"><br>
+    Height: <input type="number" [(ngModel)]="photoHeight" [ngModelOptions]="{standalone: true}"><br>
+</form>
+

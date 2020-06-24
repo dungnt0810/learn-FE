@@ -1,0 +1,11 @@
+<h3>Student Service</h3>
+
+<form >
+    Math : <input type="number" [(ngModel)]="math" [ngModelOptions]="{standalone: true}"><br>
+    Che : <input type="number" [(ngModel)]="che" [ngModelOptions]="{standalone: true}"><br>
+    Phys : <input type="number" [(ngModel)]="phys" [ngModelOptions]="{standalone: true}"><br>
+    <hr>
+    <input type="button" value="calculate" (click)="calculate()" ><br>
+    Average: {{avg}} <br>
+    Rank: {{rank}}  <br>
+</form>
