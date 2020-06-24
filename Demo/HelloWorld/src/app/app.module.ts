@@ -1,3 +1,7 @@
+import { NewsComponent } from './components/news/news.component';
+import { AboutUsComponent } from './components/aboutus/aboutus.component';
+import { HomeComponent } from './components/home/home.component';
+import { Demo8Component } from './demo8.component';
 import { StudentService } from './services/student.service';
 import { Demo7Component } from './demo7.component';
 import { Demo6Component } from './demo6.component';
@@ -24,7 +28,11 @@ import { StudentComponent } from './student.component';
     Demo4Component,
     Demo5Component,
     Demo6Component,
-    Demo7Component
+    Demo7Component,
+    Demo8Component,
+    HomeComponent,
+    AboutUsComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
@@ -35,6 +43,6 @@ import { StudentComponent } from './student.component';
   providers: [
     StudentService
   ],
-  bootstrap: [Demo7Component]
+  bootstrap: [Demo8Component]
 })
 export class AppModule { }
