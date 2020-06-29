@@ -1,3 +1,11 @@
+import { Contact2Component } from './components/contact/components/contact2.component';
+import { Contact1Component } from './components/contact/components/contact1.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { ProfileService } from './services/profile.service';
+import { ProfileComponent } from './components/profile/profile.component';
+import { DetailComponent } from './components/product/detail.component';
+import { ProductComponent } from './components/product/product.component';
+import { ProductService } from './services/product.service';
 import { NewsComponent } from './components/news/news.component';
 import { AboutUsComponent } from './components/aboutus/aboutus.component';
 import { HomeComponent } from './components/home/home.component';
@@ -32,7 +40,13 @@ import { StudentComponent } from './student.component';
     Demo8Component,
     HomeComponent,
     AboutUsComponent,
-    NewsComponent
+    NewsComponent,
+    ProductComponent,
+    DetailComponent,
+    ProfileComponent,
+    ContactComponent,
+    Contact1Component,
+    Contact2Component
   ],
   imports: [
     BrowserModule,
@@ -41,7 +55,9 @@ import { StudentComponent } from './student.component';
     ReactiveFormsModule
   ],
   providers: [
-    StudentService
+    StudentService,
+    ProductService,
+    ProfileService
   ],
   bootstrap: [Demo8Component]
 })
