@@ -1,3 +1,4 @@
+import { MobileService } from './services/mobile.service';
 import { Contact2Component } from './components/contact/components/contact2.component';
 import { Contact1Component } from './components/contact/components/contact1.component';
 import { ContactComponent } from './components/contact/contact.component';
@@ -25,6 +26,8 @@ import { AppComponent } from './app.component';
 import { DemoComponent } from './demo.component';
 import { Demo2Component } from './demo2.component';
 import { StudentComponent } from './student.component';
+import { HttpClientModule} from '@angular/common/http';
+import { MobileComponent } from './components/mobileProduct/mobile.component';
 
 
 @NgModule({
@@ -46,19 +49,22 @@ import { StudentComponent } from './student.component';
     ProfileComponent,
     ContactComponent,
     Contact1Component,
-    Contact2Component
+    Contact2Component,
+    MobileComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [
     StudentService,
     ProductService,
-    ProfileService
+    ProfileService,
+    MobileService
   ],
-  bootstrap: [Demo8Component]
+  bootstrap: [MobileComponent]
 })
 export class AppModule { }

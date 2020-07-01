@@ -1,0 +1,26 @@
+<h3>Product Infor</h3>
+<br>
+<h3>{{mobile?.id}}</h3>
+<br>
+<h3>{{mobile?.name}}</h3>
+<br>
+<h3>{{mobile?.price}}</h3>
+<br>
+<h3>{{mobile?.status}}</h3>
+<br><br><br>
+
+<table> 
+    <tr>
+        <td>id</td>
+        <td>name</td>
+        <td>price</td>
+    </tr>
+    
+    <ng-container *ngFor="let mobile of mobiles">
+        <tr>
+            <td>{{mobile?.id}}</td>
+            <td>{{mobile?.name}}</td>
+            <td>{{mobile?.price}}</td>
+        </tr>
+    </ng-container>
+</table>
